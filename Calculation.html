@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                <link href="Aditya.css" rel="stylesheet" type="text/css">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <title> Aditya </title>
+        
+        </head>
+        <body> 
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="nav">
+                                        
+					<div class ="col-md-4"><a class="active" href="Index.html">Home</a></div>
+					<div class ="col-md-4"><a class="active" href="Calculation.html">Calculation</a></div>
+					<div class ="col=md-4"><a class="active" href="Contact.html">Contact</a></div></div>
+                        </div>
+
+                        <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <h2><strong>Salary Calculator</strong></h2><br>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                        </div>
+                        <form>
+                                <div class="row">
+                                 <div class="col-md-3"></div>
+                                 <div class="col-md-2">
+                                <p>Enter your Name</p>
+                                 </div>
+                                <div class="col-md-4">
+                                <input type="text" class="form-control" id ="sName"placeholder="Enter your name">
+                                </div>
+                                <div class="col-md-3"></div>
+                                 </div><br>
+                                
+                                <div class="row">
+                                        <div class="col-md-3"></div>
+                                        <div class="col-md-2">
+                                        <p>Enter Hourly wage($)</p>
+                                        </div>  
+                                        <div class="col-md-4">
+                                        <input type="text" class="form-control" id="sAmount" placeholder="Enter amount in dollars($)">
+                                        </div>
+                                        <div class="col-md-3"></div> 
+                                </div> <br>
+                                <div class="row">
+                                                <div class="col-md-3"></div>
+                                                <div class="col-md-2">
+                                                <p>Number of hours per week</p>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                <input type="text" class="form-control" id="sHours"placeholder="Enter time in hours">
+                                                </div>
+                                                <div class="col-md-3"></div> 
+                                        </div> <br>  
+                                <div class="row">
+                                                <div class="col-md-3"></div>
+                                                <div class="col-md-2">
+                                                <p>Select type of pay</p>
+                                                </div>  
+                                                <div class="col-md-4">
+                                                <select id="sPay">
+                                                        <option value="" selected disabled hidden>Select</option>
+                                                        <option value="7"> Weekly Pay</option>
+                                                        <option value ="1"> Monthly Pay</option>
+                                                        <option value="3"> Quarterly Pay</option>
+                                                        <option value="12"> Yearly Pay</option></select>
+                                                </div>
+                                                <div class="col-md-3"></div>
+                                        </div><br>          
+
+                                <div class="row">
+                                        <div class="col-md-5"></div>
+                                        <div class="col-md-1">
+                                        <button type="button" onclick="SalCalculator()" >Submit </button></div> 
+                                        <div class="col-md-1"><button type="button" onclick="salClear()">Clear</button></div>
+                                        <div class="col-md-5"></div>
+                                        
+                                </div>
+                                <br>
+                                <div class="row">
+                                                <div class="col-md-3"></div>
+                                                <div class="col-md-2">
+                                               <p>Salary in Dollars</p>
+                                                </div>
+                                               <div class="col-md-4">
+                                               <input type="text" id="sSalary" class="form-control" placeholder="$">
+                                               </div>
+                                               <div class="col-md-3"></div>
+                                                </div><br>
+                                               
+                                                </form>
+                                 
+                        <br><br><br>
+
+                        <div class="row links">
+                    <div class="col-md-3">
+                                    <i class="fa fa-github"></i><a href="https://github.com/S530860">GitHub</a>
+                                </div>
+                                <div class="col-md-3">
+                                        <i class="fa fa-bitbucket"></i><a href="https://bitbucket.org/S530860/">BitBucket</a>
+                            </div>
+                            <div class="col-md-3">
+                                    <i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/feed/">Linkedin</a>
+                            </div>
+                            <div class="col-md-3">
+                                    <i class="fa fa-facebook"></i><a href="https://www.facebook.com/">Facebook</a>
+                                </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                                        <div class="col-md-12">
+                           <footer id="span1">
+                                 By Aditya Malireddy
+                         </footer>
+                                        </div>
+                    </div>
+                </div>
+                </div>
+                <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+                <script src="Calculation.js"></script>
+                    </body>
+
+    </html>
